@@ -1,0 +1,6 @@
+FROM ubuntu
+RUN update
+RUN apt insdtall apache2 -y
+ADD . /var/www/html/
+ENTERYPOINT apachectl -D FOREGROUND
+  
